@@ -224,7 +224,7 @@ export default function Buttons() {
     return (
         <div className="w-full">
 
-            <div className="buttonContainer mx-auto w-fit py-10 px-5 grid grid-cols-4 sm:grid-cols-[45px_45px_45px_45px_45px] sm:grid-rows-[45px_45px_45px_45px] gap-4 justify-center content-center">
+            <div className="buttonContainer mx-auto w-fit py-10 px-5 grid grid-cols-[45px_45px_45px_45px] grid-rows-[45px_45px_45px_45px_45px] sm:grid-cols-[45px_45px_45px_45px_45px] sm:grid-rows-[45px_45px_45px_45px] gap-5 sm:gap-4 justify-center content-center">
                 {/* The total clear button */}
                 <button 
                 className={`poppins-black ${metaBtn} bg-white/80   p-3 sm:col-span-2`}

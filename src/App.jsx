@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <ModeContext.Provider value={{mode, setMode}}>
-      <div className={['w-screen', 'h-screen', 'flex', 'justify-center', 'items-center', 'bg-[url("./assets/bubbleBg.png")]', 'bg-no-repeat', 'bg-center', mode=== 'light'? 'bg-[#ADD8FF]' : 'bg-black'].join(' ')}
+      <div className={['w-full', 'sm:h-full','flex', 'justify-center', 'items-center', 'bg-[url("./assets/bubbleBg.png")]', 'bg-no-repeat', 'bg-center', mode=== 'light'? 'bg-[#ADD8FF]' : 'bg-black'].join(' ')}
       >
       <Calculator/>
       </div>

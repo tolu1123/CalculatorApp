@@ -32,7 +32,7 @@ export default function Calculator() {
     console.log(mode);
     
     return (
-        <div className={['calculator', 'w-full', 'h-full', 'sm:w-[375px]', 'sm:h-[500px]', 'shadow-sm', 'backdrop-blur-sm', 'rounded-3xl', mode === 'light' ? 'whitebg-grad shadow-[#339DFF]': 'blackbg-grad shadow-white'].join(' ')}
+        <div className={['calculator', 'w-full', 'sm:w-[375px]', 'sm:h-min', , 'shadow-sm', 'backdrop-blur-sm', 'rounded-3xl', mode === 'light' ? 'whitebg-grad sm:shadow-[#339DFF]': 'blackbg-grad sm:shadow-white'].join(' ')}
         >
 
             <Tab/>
