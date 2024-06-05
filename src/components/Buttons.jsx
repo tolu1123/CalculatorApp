@@ -24,6 +24,9 @@ export default function Buttons() {
     const {valB, setValB} = useContext(ValBContext);
     const {result, setResult} = useContext(ResultContext);
 
+    //This is a useState to force rerender.
+    const [count, setCount] = useState(0)
+
     console.log('This is operator',operator);
     console.log('This is valA', valA);
     console.log('This is valB', valB);
@@ -42,7 +45,7 @@ export default function Buttons() {
             setValB('');
         }
     
-    }, [operator])
+    }, [operator, count]);
     
 
     function setOperatorSymbol(symbol) {
@@ -54,11 +57,14 @@ export default function Buttons() {
             console.log('valB')
             // If valB has a value, and we set an operator, we will call the (run) operation to (do the necessary compilation) and save the result in valA.
             equate();
+             
+
             // Set Operator
             setOperator(symbol);
             // The useEffect is going to handle the rest.
             
-            
+            // Then we change count to force a rerender  of component
+            setCount(prevVal => prevVal + 1);
             
 
 
