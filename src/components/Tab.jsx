@@ -6,7 +6,7 @@ import { ModeContext } from './ModeContext';
 
 export default function Tab() {
     const {mode, setMode} = useContext(ModeContext);
-    console.log('This is mode:', mode)
+    
     return (
         <div className="calculatorTab flex flex-row justify-items-end px-5 pt-5 mt-5">
             <button 

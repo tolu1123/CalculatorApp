@@ -29,7 +29,6 @@ export default function Calculator() {
     const [operator,setOperator] = useState('');
     const [result, setResult] = useState('')
 
-    console.log(mode);
     
     return (
         <div className={['calculator', 'w-full', 'sm:w-[375px]', 'sm:h-min' , 'shadow-sm', 'backdrop-blur-sm', 'rounded-3xl', mode === 'light' ? 'whitebg-grad sm:shadow-[#339DFF]': 'blackbg-grad sm:shadow-white'].join(' ')}
